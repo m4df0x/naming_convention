@@ -1,0 +1,45 @@
+### Addresstypes
+h_x.x.x.x		Host
+n_x.x.x.x_y		Network
+f_x			FQDN
+r_x.x.x.x-y.y.y.y	IP Range
+g_x			Geography/Country
+m_x			MAC Adress
+
+### Ports and Services	
+tcp_x			Port/Service TCP
+tcp_x-y			Port/Service Range TCP
+udp_x			Port/Service UDP
+udp_x-y			Port/Service Range
+
+tcp_udp_x		Port/Service TCP and UDP
+tcp_udp_x-y		Port/Service Range TCP and UDP
+
+### Groups
+hg_x			hostgroup
+ng_x			networkgroup
+sg_x			Port/Service Group
+ug_x			usergroup
+
+### Security Profiles
+<type>_ [<flowtype>]_<handling>
+##### Type
+av	Antivirus
+ac	ApplicationControl
+ips	IntrusionPrevention
+dns	DNS Filter
+wf	WebFilter
+ff	FileFilter
+vf	VideoFilter
+
+##### Flowtype
+pb	Proxy-Based
+fb	Flow-Based
+
+pg	ProfileGroups
+
+### VPNs
+vpn_<src>-<dst>_<info>
+src	Source IP/name/abbrivation
+dst	Source IP/name/abbrivation
+info	MPLS/DSL/DAILUP or Number
