@@ -1,45 +1,57 @@
 ### Addresstypes
-h_x.x.x.x		Host
-n_x.x.x.x_y		Network
-f_x			FQDN
-r_x.x.x.x-y.y.y.y	IP Range
-g_x			Geography/Country
-m_x			MAC Adress
+h_x.x.x.x		    host
+h6_x.x.x.x		    IPv6 host
+ph_x.x.x.x		    proxyhost
+n_x.x.x.x_y		    network
+f_x			        fqdn
+r_x.x.x.x-y.y.y.y	ip range
+g_x			        geography/country
+m_x			        MAC adress
 
 ### Ports and Services	
-tcp_x			Port/Service TCP
-tcp_x-y			Port/Service Range TCP
-udp_x			Port/Service UDP
-udp_x-y			Port/Service Range
+tcp_x			    port/service TCP
+tcp_x-y			    port/service Range TCP
+udp_x			    port/service UDP
+udp_x-y			    port/service Range
 
-tcp_udp_x		Port/Service TCP and UDP
-tcp_udp_x-y		Port/Service Range TCP and UDP
+tcp_udp_x		    port/service TCP and UDP
+tcp_udp_x-y		    port/service Range TCP and UDP
 
 ### Groups
-hg_x			hostgroup
-ng_x			networkgroup
-sg_x			Port/Service Group
-ug_x			usergroup
+hg_x			    hostgroup
+h6g_x			    IPv6 hostgroup
+ng_x			    networkgroup
+sg_x			    port/service group
+ug_x			    usergroup
 
 ### Security Profiles
-<type>_ [<flowtype>]_<handling>
-##### Type
-av	Antivirus
-ac	ApplicationControl
-ips	IntrusionPrevention
-dns	DNS Filter
-wf	WebFilter
-ff	FileFilter
-vf	VideoFilter
+<type>_[<company>]_[<flowtype>]_<handling>
 
-##### Flowtype
-pb	Proxy-Based
-fb	Flow-Based
+##### type
+av	    Antivirus
+ac	    ApplicationControl
+ips	    IntrusionPrevention
+dns	    DNS Filter
+wf	    WebFilter
+ff	    FileFilter
+vf	    VideoFilter
+SSl     SSL/SSH Inspection
 
-pg	ProfileGroups
+##### flowtype
+pb	    Proxy-Based
+fb	    Flow-Based
+
+pg	    ProfileGroups
+
+
+### handling
+monitor/block/<branch>
 
 ### VPNs
 vpn_<src>-<dst>_<info>
 src	Source IP/name/abbrivation
 dst	Source IP/name/abbrivation
 info	MPLS/DSL/DAILUP or Number
+
+### SDWAN
+sdwanzone
