@@ -10,7 +10,7 @@ m_x			        MAC adress
 
 ### Ports and Services	
 tcp_x			    port/service TCP
-tcp_x-y			    port/service Range TCP
+tcp_x-y      port/service Range TCP
 udp_x			    port/service UDP
 udp_x-y			    port/service Range
 
@@ -23,6 +23,9 @@ h6g_x			    IPv6 hostgroup
 ng_x			    networkgroup
 sg_x			    port/service group
 ug_x			    usergroup
+--> x stands for a speaking name or abbreviation
+--> groups can contain groups
+--> groups should always contain the smallest commonality
 
 ### Security Profiles
 <type>_[<company>]_[<flowtype>]_<handling>
@@ -55,3 +58,5 @@ info	MPLS/DSL/DAILUP or Number
 
 ### SDWAN
 sdwanzone
+psla    performance sla
+sd_rule
