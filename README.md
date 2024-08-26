@@ -18,8 +18,7 @@
     
 - <h3> tools </h3>
 
-  
- - <h4> currently learning </h4>
+  - <h4> currently learning </h4>
 
 
 <!---
